@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="flex justify-items-center">
       <Link
         href="/termsandconditions"
       >
@@ -15,7 +15,14 @@ export default function Footer() {
         />
         Terms & Conditions
       </Link>
-      <link></link>
+      <Link href="/privacypolicy">
+        <Image src="lock.svg"
+        alt="privacy policy"
+        width={60}
+        height={60}
+        />
+        Privacy Policy
+      </Link>
     </footer>
   );
 }

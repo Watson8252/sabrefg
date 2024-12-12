@@ -1,5 +1,7 @@
-export default funciton Ammo() {
+export default function Ammo() {
   return(
-    <main></main>
+    <div>
+      Ammo Page
+    </div>
   );
 }
