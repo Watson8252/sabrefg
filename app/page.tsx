@@ -1,24 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "./footer";
+import Header from "./header";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <Header />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h2>Shop Ammo, Parts, and Designs.</h2>
         <div className="flex flex-row justify-items-center">
-          <div>
+          <div className="p-8">
             <Link href="/shop/ammo">
               <Image 
                 src="/300blk.jpeg"
                 alt="300 blackout"
-                width={200}
+                width={219}
                 height={300}
               />
               Ammo
             </Link>
           </div>
-          <div>
+          <div className="p-8">
             <Link href="/shop/parts">
               <Image 
                 src="/coming_soon_w.jpg"
@@ -29,19 +32,20 @@ export default function Home() {
               Parts
             </Link>
           </div>
-          <div>
+          <div className="p-8">
             <Link href="/shop/designs">
               <Image 
                 src="/ps90_stock_extended.png"
                 alt="ps90 stock extended"
-                width={200}
+                width={230}
                 height={300}
               />
               Designs
             </Link>
           </div>
         </div>
-      </main>     
+      </main> 
+      <Footer />
     </div>
   );
 }
