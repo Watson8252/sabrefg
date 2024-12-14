@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-end justify-items-center">
+    <footer className="footer">
       <Link
         href="/termsandconditions"
       >

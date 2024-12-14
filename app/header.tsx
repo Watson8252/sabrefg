@@ -9,9 +9,9 @@ export default function Header() {
         <Image 
           className="justify-start"
           src="/banner_no_drop_shadow.png"
-          alt="Sabrefgbanner"
-          width={180}
-          height={90}
+          alt="Sabre Firearms Group, LLC."
+          width={160}
+          height={80}
         /> 
       </Link>
       <nav>
@@ -19,6 +19,17 @@ export default function Header() {
         <Link href="/shop/parts">Parts</Link>
         <Link href="/shop/designs">Designs</Link>
       </nav>
+
+      <Link href="/">
+        <Image
+          className="filter-white"
+          src="/shopping_cart.svg"
+          alt="Cart"
+          width={40}
+          height={40}
+        />
+      </Link>
+
     </header> 
   );
 }
